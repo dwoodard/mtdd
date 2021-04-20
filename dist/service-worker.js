@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.738077a710b2d440384ff7a28f0ea36f.js"
+  "/precache-manifest.3eae29255e22e73a3d5f5d24cb5d5b3b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "manage.teacupdoodledogs.com"});

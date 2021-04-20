@@ -1,19 +1,3 @@
-<!--
-  This example requires Tailwind CSS v2.0+
-
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ]
-  }
-  ```
--->
 <template>
   <Disclosure as="header" class="bg-white shadow" v-slot="{ open }">
     <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:divide-y lg:divide-gray-200 lg:px-8">
@@ -112,9 +96,7 @@ const user = {
       'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
 }
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
+  { name: 'Dogs', href: '/dogs', current: true },
   { name: 'Calendar', href: '#', current: false }
 ]
 const userNavigation = [
