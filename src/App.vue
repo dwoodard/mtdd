@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import Navigation from '@/Navigation';
+import Navigation from '@/components/Navigation'
 
 export default {
   name: 'App',
@@ -15,9 +15,10 @@ export default {
 </script>
 
 <style>
-html,body{
+html, body {
   margin: 0;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
