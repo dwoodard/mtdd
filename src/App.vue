@@ -1,40 +1,18 @@
 <template>
-  <div id="app">
-    Manage Teacup Doodle dogs
-
-    <div>
-      My name is <input v-model="name">
-    </div>
-
-    <div>
-      {{name}}
-    </div>
-
-    <input type="file">
-
+  <div id="app" >
+    <Navigation/>
+    <Breadcrumbs/>
    </div>
 </template>
 
 <script>
 
+import Navigation from '@/components/Navigation'
+import Breadcrumbs from '@/Breadcrumbs'
+
 export default {
-  name: 'App',
-  data () {
-    return {
-      name: '',
-      file: ''
-    }
-  },
-  mounted () {
-    if (localStorage.name) {
-      this.name = localStorage.name
-    }
-  },
-  watch: {
-    name (newName) {
-      localStorage.name = newName
-    }
-  }
+  components: { Breadcrumbs, Navigation },
+  data () {}
 }
 </script>
 
