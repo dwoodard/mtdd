@@ -1,4 +1,4 @@
-# mtdd
+# vue-test
 
 ## Project setup
 ```

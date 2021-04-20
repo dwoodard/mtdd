@@ -1,28 +1,26 @@
 <template>
-  <div id="app" >
-    <Navigation/>
-    <Breadcrumbs/>
-   </div>
+  <Navigation/>
 </template>
 
 <script>
-
-import Navigation from '@/components/Navigation'
-import Breadcrumbs from '@/Breadcrumbs'
+import Navigation from '@/Navigation';
 
 export default {
-  components: { Breadcrumbs, Navigation },
-  data () {}
+  name: 'App',
+  components: {
+    Navigation
+  }
 }
 </script>
 
 <style>
+html,body{
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
