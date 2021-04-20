@@ -1,5 +1,5 @@
 <template>
-  <h1>works</h1>
+  <h1>works there</h1>
 </template>
 
 <script>

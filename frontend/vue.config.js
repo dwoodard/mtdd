@@ -1,7 +1,13 @@
 const { GenerateSW } = require("workbox-webpack-plugin");
+const withPWA = require('next-pwa')
 
 module.exports = {
-  
+  pwa: {
+    disable: process.env.NODE_ENV === 'development',
+    register: true,
+    scope: '/app',
+    sw: 'service-worker.js',
+  },
   
   // output built static files to Laravel's public dir.
   // note the "build" script in package.json needs to be modified as well.
