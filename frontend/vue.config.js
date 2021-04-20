@@ -1,15 +1,11 @@
 const { GenerateSW } = require("workbox-webpack-plugin");
 
 module.exports = {
-  // proxy API requests to Valet during development
-  devServer: {
-    proxy: 'http://laracon.test'
-  },
+  
   
   // output built static files to Laravel's public dir.
   // note the "build" script in package.json needs to be modified as well.
   outputDir: '../public',
-  publicPath: process.env.NODE_ENV === "development" ? "../public/vuejs-pwa/" : "",
   
   configureWebpack: {
     plugins: [new GenerateSW()]
