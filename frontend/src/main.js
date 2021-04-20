@@ -1,7 +1,10 @@
-import { createApp } from 'vue'
+import { Vue } from 'vue'
 import App from './App.vue'
+import './registerServiceWorker'
+
 import wb from "./registerServiceWorker";
 
-createApp.prototype.$workbox = wb;
+Vue.prototype.$workbox = wb;
 
-createApp(App).mount('#app')
+
+Vue(App).mount('#app')

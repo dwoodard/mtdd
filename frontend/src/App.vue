@@ -17,7 +17,8 @@ export default {
         this.showUpgradeUI = true;
       });
     }
-},
+  },
+
   methods: {
     async accept() {
       this.showUpgradeUI = false

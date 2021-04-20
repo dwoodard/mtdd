@@ -9,6 +9,8 @@ module.exports = {
   // output built static files to Laravel's public dir.
   // note the "build" script in package.json needs to be modified as well.
   outputDir: '../public',
+  publicPath: process.env.NODE_ENV === "development" ? "../public/vuejs-pwa/" : "",
+  
   configureWebpack: {
     plugins: [new GenerateSW()]
   },
