@@ -1,5 +1,5 @@
 <template>
-  <div>hey wowa</div>
+
   <Navigation/>
 </template>
 
